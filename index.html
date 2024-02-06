@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Pov meas.</strong>
+                        <p style="font-size: 6px;">                        
+                                Hey TiDa❤️,
+                                As Valentine's Day approaches, I couldn't help but express how much your presence brightens my days. Though we might be in a "situationship," I wanted to take a moment to acknowledge the special connection we share.
+                                Your smile, laughter, and the way you make ordinary moments extraordinary have not gone unnoticed. Whether we're sharing conversations or just being in the same space, there's a warmth that I cherish.
+                                So, on this Valentine's Day, I want to wish you joy, laughter, and all the good vibes. Whether or not we navigate the typical romantic route, know that your presence matters a lot to me.
+                                Cheers to the unique journey we're on, and hoping this Valentine's Day brings a little extra brightness to your world. 
+                                <br><br>
+                            <div style="text-align: center; font-size: 10px;"> Chaovisal</div>  
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
